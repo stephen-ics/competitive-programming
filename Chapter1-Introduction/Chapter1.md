@@ -53,4 +53,15 @@
   - Dynamic Programming algorithms which fill a 2-D matrix in `O(k)` per cell is in `O(k x n^2)`
   - The best time complexity of a comparison-based sorting algorithm is `Ω(n log2n)`
   - Most of the time, `O(nlog2n)` algorithms will be sufficient for most contest problems
-
+- Tip 3: Master Programming Languages
+  - There are several programming languages allowed in ICPC such as C/C++ and Java
+  - Though C++ is preferred, mastery of Java is necessary, since it has powerful BigInteger, String Processing and GregorianCalendar APIs
+- Tip 4: Master the Art of Testing Code
+  - Here are some guidelines for designing good test cases
+    1. Must include sample input as you have the answer given... Use 'fc' in Windows or 'diff' in UNIX to help check your code's output against the sample output
+    2. Must include boundary cases (check for overflow, out of bounds, etc)
+    3. For multiple input test cases, use two identical test cases consecutively to check if you have forgotten to initialize some variables
+    4. Create tricky test cases by identifiying cases that are 'hidden' in the problem description
+    5. Do not assume the input will be nicely formatted, try inserting white spaces in your input
+    6. Generate large random test cases (verify that code runs within the time limit)
+- Tip 5: Practice and More Practice!!!
