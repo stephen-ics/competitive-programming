@@ -219,6 +219,15 @@ CompetitiveProgramming_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CompetitiveProgramming_SOURCE_DIR:STATIC=/Users/stephenni/CLionProjects/CompetitiveProgramming
 
+//Value Computed by CMake
+Hello_BINARY_DIR:STATIC=/Users/stephenni/CLionProjects/CompetitiveProgramming/cmake-build-debug/Hello
+
+//Value Computed by CMake
+Hello_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Hello_SOURCE_DIR:STATIC=/Users/stephenni/CLionProjects/CompetitiveProgramming/Hello
+
 
 ########################
 # INTERNAL cache entries

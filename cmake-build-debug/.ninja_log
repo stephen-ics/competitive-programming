@@ -1,3 +1,13 @@
 # ninja log v5
+0	426	1696869555801180314	Hello/CMakeFiles/CompetitiveProgramming.dir/hello.cpp.o	1977646f2778204a
+1	305	1696823427421255179	CMakeFiles/CompetitiveProgramming.dir/Hello/hello.cpp.o	65db683980ff2684
+1	101	1696870168893232520	CompetitiveProgramming	5ca986eec7aa3c2d
+0	47	1696870170590630623	build.ninja	bc0b157bd7666f53
+1	359	1696823177849535356	CMakeFiles/CompetitiveProgramming.dir/hello.cpp.o	21fb943ad038450b
+426	465	1696869555841773471	Hello/CompetitiveProgramming	2a243f2eab34130b
+2	365	1696869472040335472	Hello/CMakeFiles/HelloMain.dir/hello.cpp.o	632f8c8c917782d
 0	332	1696397806086304194	CMakeFiles/CompetitiveProgramming.dir/main.cpp.o	f77f1657ad912402
-333	362	1696397806118015760	CompetitiveProgramming	5ca986eec7aa3c2d
+2	373	1696870119692657098	CMakeFiles/CompetitiveProgramming.dir/ww.cpp.o	8769f9c86f8e628a
+365	399	1696869472077942240	Hello/HelloMain	7df32af483dcca86
+0	326	1696870180872130778	CMakeFiles/MyExecutable.dir/ww.cpp.o	3419fd691b0cfbcd
+327	358	1696870180905303922	MyExecutable	4f519c6d075c0b4c
