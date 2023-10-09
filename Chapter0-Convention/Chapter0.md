@@ -82,3 +82,47 @@
 ### Constants
 - `INF`: This is a constant representing a large value (2 billion in this case) that is often used to represent infinity in algorithms
 - `MEMSET_INF` and `MEMSET_HALF_TIME`: These constants are used as arguments for the `memset` function to initialize arrays with specific values
+
+# Abbreviations
+A list of important abbreviations that will be referenced throughout this repository
+- ACM : Association of Computing Machinery
+- AC : Accepted
+- APSP : All-Pairs Shortest Paths
+- AVL : Adelson-Velskii Landis (BST)
+- BNF : Backus Naur Form
+- BFS : Breadth First Search
+- BST : Binary Search Tree
+- CC : Coin Change
+- CCW : Counter ClockWise
+- CS : Computer Science
+- DAG : Directed Acyclic Graph
+- DAT : Direct Addressing Table
+- D&C : Divide and Conquer
+- DFS : Depth First Search
+- DP : Dynamic Programming
+- ED : Edit Distance
+- GCD : Greatest Common Divisor
+- ICPC : International Collegiate Programming
+Contest
+- IOI : International Olympiad in Informatics
+- LA : Live Archive 
+- LCA : Lowest Common Ancestor
+- LCM : Lowest Common Multiple
+- LCS : Longest Common Subsequence
+- LIS : Longest Increasing Subsequence
+- MCM : Matrix Chain Multiplication
+- MCMF : Min-Cost Max-Flow
+- MLE : Memory Limit Exceeded
+- MST : Minimum Spanning Tree
+- MWIS : Maximum Weighted Independent Set
+- OJ : Online Judge
+- PE : Presentation Error
+- RB : Red-Black (BST)
+- RMQ : Range Minimum Query
+- RSQ : Range Sum Query
+- RTE : Run Time Error
+- SSSP : Single-Source Shortest Paths
+- STL : Standard Template Library
+- TLE : Time Limit Exceeded
+- WA : Wrong Answer
+- WF : World Finals
