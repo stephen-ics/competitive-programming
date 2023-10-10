@@ -43,14 +43,98 @@
 - C++ provides functions to create, inspect, and modify null-terminated strings
 - For example `"Hello"` is represented as `{'H', 'e', 'l', 'l', 'o', '\0'}`
 
-### Member Functions (Method)
+## String Member Functions (Methods)
 A member function is a function that is associated with a class or an object and defines the behaviour or actions that objects of a class can perform
 - (constructor): Construct a string object
 - (destructor): String destructor
 - operator=: string assignment
 
-### String Iterators
-- begin: Return iterator to beginning
-- end: Return iterator to end
-- rbegin: Return reverse iterator to reverse beginning
-- rend: Return reverse iterator to reverse end
+### Iterators
+An iterator is indeed an object, and its primary purpose is to provide a way to access and traverse the elements within a container such as a vector, list, or other collection. A string iterator exhibits pointer-like behaviour, as they point to a specific element within the container, accessed with the `*` operator to dereference them
+```c++
+    #include <iostream>
+    #include <vector>
+    
+    std::vector<int> values = {1, 2, 3, 4, 5};
+
+    for (std::vector<int>::iterator it = values.begin(); it != values.end(); it++) {
+        std::cout << *it << std::endl;
+    }
+    // this will output each value in the vector on a separate line
+    // notice how the iterator needs to be dereferenced with the * operator
+```
+- `begin`: Return iterator to beginning
+- `end`: Return iterator to end
+- `rbegin`: Return reverse iterator to reverse beginning
+- `rend`: Return reverse iterator to reverse end
+- `cbegin`: Return const_iterator to the beginning
+- `cend`: Return const_iterator to the end
+- `crbegin`: Return const_reverse iterator to reverse beginning
+- `crend`: Return const_reverse_iterator to reverse end
+
+### Capacity
+- `size`: Return length of the string
+- `length`: Return length of the string
+- `max_size`: Return maximum size of string
+- `resize`: Resize string
+- `capacity`: Return size of allocated storage
+- `reserve`: Request a change in capacity
+- `clear`: Clear string
+- `empty`: Test if string is empty
+- `shrink_to_fit`: Shrink to fit
+
+### Element Access
+- `operator[]`: Get character of string
+- `at`: Get character in string
+- `back`: Access last character
+- `front`: Access front character
+
+### Modifiers
+- `operator+=`: Append to string
+- `append`: Append to string
+- `push_back`: Append character to string
+- `assign`: Assign content to string
+- `insert`: Insert into string
+- `erase`: Erase characters from string
+- `replace`: Replace portion of string
+- `swap`: Swap string values
+- `pop_back`: pop_back
+
+### String Operations:
+- `c_str`: Get C string equivalent
+- `data`: Get string data
+- `get_allocator`: Get allocator
+- `copy`: Copy sequence of characters from string
+- `find`: Find content in string
+- `rfind`: Find last occurrence of content in string
+- `find_first_of`: Find character in string
+- `find_last_of`: Find character in string from the end
+- `find_first_not_of`: Find absence of character in string
+- `find_last_not_of`: Find absence of character in string from the end
+- `substr`: Generate substring
+- `compare`: Compare strings
+
+### Member Constants
+- `npos`: Represents the maximum value for size_t, often used to represent the "Not found" status
+```c++
+    #include<iostream>
+    #include<string>
+    
+    std::string text = "Hello World!"
+    size_t position = text.find("abc") // Returns std::string::npos because "abc" is not found
+    if (position == std::string::npos) {
+        std::cout << "Substring not found" << std::endl;
+    }
+    else {
+        std::cout << "Substring found at position " << position << std::endl;
+    }
+```
+
+## Non-Member Function Overloads
+- `operator+`: Concatenate strings
+- `relational operatores`: Compare strings with another value
+- `swap`: Exchange the values of two strings
+- `operator>>`: Extract string from stream
+- `operator<<`: Insert string into stream
+- `getline`: Get line from stream into string
+
