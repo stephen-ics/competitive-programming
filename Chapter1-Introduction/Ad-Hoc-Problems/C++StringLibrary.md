@@ -1,4 +1,4 @@
-# Python String Library
+# C++ String Library
 - Strings in C++ are objects part of the string class, the constructor for `std::string` is implicitly called by the C++ compiler
 - When a `std::string` object goes out of scope (when a function ends) or when it's explicitly deleted using the `delete` operator, the destructor for that `std::string` is automatically called, ensuring that any dynamically allocated memory or resources used by the string are properly deallocated and released
 
@@ -40,9 +40,9 @@
 
 ## String Member Functions (Methods)
 A member function is a function that is associated with a class or an object and defines the behaviour or actions that objects of a class can perform
-- (constructor): Construct a string object
-- (destructor): String destructor
-- operator=: string assignment
+- `(constructor)`: Construct a string object
+- `(destructor)`: String destructor
+- `operator=`: string assignment
 
 ### Iterators
 An iterator is indeed an object, and its primary purpose is to provide a way to access and traverse the elements within a container such as a vector, list, or other collection. A string iterator exhibits pointer-like behaviour, as they point to a specific element within the container, accessed with the `*` operator to dereference them
