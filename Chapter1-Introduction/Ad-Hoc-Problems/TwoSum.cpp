@@ -2,6 +2,7 @@
 // Created by Stephen Ni on 2023-10-10.
 //
 
+// Link to the Problem: https://dmoj.ca/problem/collatz
 #include <iostream>
 #include <vector>
 
