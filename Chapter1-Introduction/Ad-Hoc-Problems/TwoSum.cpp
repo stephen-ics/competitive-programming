@@ -2,7 +2,7 @@
 // Created by Stephen Ni on 2023-10-10.
 //
 
-// Link to the Problem: https://dmoj.ca/problem/collatz
+// Link to the Problem: https://leetcode.com/problems/two-sum/
 #include <iostream>
 #include <vector>
 

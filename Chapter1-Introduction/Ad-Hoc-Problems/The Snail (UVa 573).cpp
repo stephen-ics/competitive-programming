@@ -2,7 +2,7 @@
 // Created by Stephen Ni on 2023-10-11.
 //
 
-// Link to the Problem: https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=514
+// Link to the Problem: https://onlinejudge.org/external/5/514.pdf
 
 // be careful of edgecases!
 

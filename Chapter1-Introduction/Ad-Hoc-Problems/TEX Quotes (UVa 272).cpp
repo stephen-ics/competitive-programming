@@ -2,7 +2,7 @@
 // Created by Stephen Ni on 2023-10-09.
 //
 
-// Link to the Problem: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=4&page=show_problem&problem=208
+// Link to the Problem: https://onlinejudge.org/external/2/272.pdf
 
 #import <iostream>
 #import <string>

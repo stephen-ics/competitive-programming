@@ -2,7 +2,7 @@
 // Created by Stephen Ni on 2023-10-09.
 //
 
-// Link to the Problem: https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=330
+// Link to the Problem: https://onlinejudge.org/external/3/394.pdf
 
 // array manipulation problem
 
