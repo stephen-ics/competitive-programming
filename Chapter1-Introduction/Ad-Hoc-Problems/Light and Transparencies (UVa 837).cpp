@@ -13,14 +13,23 @@
 #include<algorithm>
 #include<set>
 #include<iomanip>
+#include<sstream>
 
 bool compareFirstElement(const std::vector<float>& a, const std::vector<float>& b) {
     return a[0] < b[0];
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(0);
+    std::cin.tie(0);
+
     int n;
     std::cin >> n;
+
+    std::cout.precision(3);
+    std::cout.setf(std::ios::fixed);
+
+    std::vector<std::vector<std::string> > outputVector;
 
     for(int k = 0; k < n; k++) {
         int np;
@@ -30,6 +39,7 @@ int main() {
         std::set<float > xValues;
 
         std::vector<std::vector<float> > output;
+        std::vector<std::string> outputStr;
 
         for(int i = 0; i < np; i++) {
             std::vector<float> values;
@@ -89,13 +99,47 @@ int main() {
         std::set<float>::reverse_iterator itLargest = xValues.rbegin();
         std::set<float>::iterator itSmallest = xValues.begin();
 
-        std::cout << length << "\n";
-        std::cout << "-inf " << std::fixed << std::setprecision(3) << *itSmallest << " " << 1.000 << "\n";
+        std::ostringstream sLargest;
+        std::ostringstream sSmallest;
+
+        sLargest << std::fixed << std::setprecision(3) << *itLargest;
+        sSmallest << std::fixed << std::setprecision(3) << *itSmallest;
+
+        std::string sLargestString = sLargest.str();
+        std::string sSmallestString = sSmallest.str();
+
+        outputStr.push_back(std::to_string(length) + "\n");
+        outputStr.push_back("-inf " + sSmallestString + " 1.000\n");
         for(std::vector<float> result : output) {
-            std::cout << std::fixed << std::setprecision(3) << result[0] << " " << result[1] << " " << result[2] << "\n";
+            std::ostringstream ss;
+            std::ostringstream ss2;
+            std::ostringstream ss3;
+
+            ss << std::fixed << std::setprecision(3) << result[0];
+            ss2 << std::fixed << std::setprecision(3) << result[1];
+            ss3 << std::fixed << std::setprecision(3) << result[2];
+
+            std::string roundedString = ss.str();
+            std::string roundedString2 = ss2.str();
+            std::string roundedString3 = ss3.str();
+
+            outputStr.push_back(roundedString + " " + roundedString2 + " " + roundedString3 + "\n");
         }
-        std::cout << std::fixed << std::setprecision(3) << *itLargest <<  " " << "+inf " << 1.000 << "\n\n";
+        outputStr.push_back(sLargestString + " " + "+inf 1.000\n");
+
+        outputVector.push_back(outputStr);
     }
+
+    for(std::vector<std::string> output : outputVector) {
+        for(std::string str : output) {
+            std::cout << str;
+        }
+
+        if (output != outputVector[outputVector.size()-1]) {
+            std::cout << "\n";
+        }
+    }
+
 
     return 0;
 }
