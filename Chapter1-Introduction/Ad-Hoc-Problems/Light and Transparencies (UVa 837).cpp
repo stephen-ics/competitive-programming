@@ -14,6 +14,10 @@
 #include<set>
 #include<iomanip>
 
+bool compareFirstElement(const std::vector<float>& a, const std::vector<float>& b) {
+    return a[0] < b[0];
+}
+
 int main() {
     int n;
     std::cin >> n;
@@ -48,6 +52,8 @@ int main() {
             xValues.insert(x2);
         }
 
+        std::sort(lightInfo.begin(), lightInfo.end(), compareFirstElement);
+
         // This will neglect -infinity to first value and last value to infinity, do this manually
         for(std::set<float>::iterator it = xValues.begin(); it != (--xValues.end()); ++it) {
             float percentLight = 1;
@@ -80,12 +86,15 @@ int main() {
         std::size_t outputSize = output.size();
         int length = outputSize += 2;
 
-        std::cout << length << std::endl;
-        std::cout << "-inf " << std::fixed << std::setprecision(3) << lightInfo[0][0] << " " << 1 << std::endl;
+        std::set<float>::reverse_iterator itLargest = xValues.rbegin();
+        std::set<float>::iterator itSmallest = xValues.begin();
+
+        std::cout << length << "\n";
+        std::cout << "-inf " << std::fixed << std::setprecision(3) << *itSmallest << " " << 1.000 << "\n";
         for(std::vector<float> result : output) {
-            std::cout << std::fixed << std::setprecision(3) << result[0] << " " << result[1] << " " << result[2] << std::endl;
+            std::cout << std::fixed << std::setprecision(3) << result[0] << " " << result[1] << " " << result[2] << "\n";
         }
-        std::cout << std::fixed << std::setprecision(3) << lightInfo[lightInfo.size()-1][1] <<  " " << "+inf " << 1.000 << "\n" << std::endl;
+        std::cout << std::fixed << std::setprecision(3) << *itLargest <<  " " << "+inf " << 1.000 << "\n\n";
     }
 
     return 0;
